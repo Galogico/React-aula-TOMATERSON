@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.grid-icon{
+    display: grid ;
+    grid-template-columns: 50px 90px; 
+    padding-top: 16px;
+}
+.galog-navbar{
+    color: white;
+}
