@@ -1,11 +1,12 @@
 import calopsita from "../imagens/Calopsita.webp"
+import sushi from "../imagens/sushi.png"
 function Navbar(){
     return(
         <>
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
             <div className="container-fluid">
                 <div className = "grid-icon">
-                    <img width={40} src={calopsita} alt=""/>
+                    <img className="image-nav-sushi" width={40} src={sushi} alt=""/>
                     <p className="galog-navbar">GalogReact</p>
                 </div>
                 <div className="navbar-nav">
