@@ -22,3 +22,7 @@ body{
 .home-title{
     padding-top: 50px;
 }
+
+h1, p{
+color:white;
+}
