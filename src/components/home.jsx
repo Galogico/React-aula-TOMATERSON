@@ -1,7 +1,7 @@
 import React from 'react'
 import Parametro from './exemploParametro/parametro'
 import GhibliList from './ghibliMovies/ghibliList'
-
+import styled from 'styled-components'
 export default function Home() {
   return (
     <>
@@ -11,8 +11,17 @@ export default function Home() {
 
     {/* <Parametro text='Bem vindo ao meu site'
     numero = '12'/> */}
+<Geral>
 
     <GhibliList/>
+</Geral>
     </>
   )
 }
+
+const Geral= styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+
+`;

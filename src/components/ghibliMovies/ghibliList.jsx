@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import GhibliMovie from './GhibliMovie'
+import styled from 'styled-components'
 
 function GhibliList() { 
     const [filmes,setFilmes] = useState([])
@@ -19,6 +20,7 @@ function GhibliList() {
 
   return (
     <>
+        <Container>
         {filmes.map((movie,index)=>
             <GhibliMovie
             key={index}
@@ -26,11 +28,20 @@ function GhibliList() {
             image={movie.image}
             description={movie.description}
             release_date={movie.release_date}
-            
-            />
+            />        
         )}
+        </Container>
     </>
   )
 }
 
 export default GhibliList
+
+const Container = styled.div`
+display:grid;
+grid-template-columns: 30% 30% 30%;
+justify-items:stretch;
+grid-column-gap:50px;
+grid-row-gap:50px;
+width: 80%;
+`;
