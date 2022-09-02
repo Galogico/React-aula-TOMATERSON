@@ -1,13 +1,24 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import GhibliModal from './GhibliModal'
+import "./ghiblimovie.css"
 
-function GhibliMovie({title,image,description,release_date}) {
+function GhibliMovie({title,image,description,banner,release_date,diretor,nomeOriginal,minutos}) {
     const [showModal,setShowModal]= useState(false);
   return (
     <>
     {showModal 
     ? //se for true faça
     <>
+    <GhibliModal
+    setShowModal={setShowModal}
+    title={title}
+    banner={banner}
+    diretor={diretor}
+    nomeOriginal={nomeOriginal}
+    minutos={minutos}
+    description={description}
+    />
     <button onClick={()=>setShowModal(false)}>cancela</button>
     </>
     : //se não for true faça

@@ -1,0 +1,20 @@
+    h3{
+        color: pink;
+    }
+
+    h3:hover{
+
+    }
+
+    .modal{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }

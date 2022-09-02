@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import GhibliMovie from './GhibliMovie'
+
 import styled from 'styled-components'
 
 function GhibliList() { 
@@ -28,6 +29,10 @@ function GhibliList() {
             image={movie.image}
             description={movie.description}
             release_date={movie.release_date}
+            banner={movie.movie_banner}
+            diretor={movie.director}
+            nomeOriginal={movie.original_title}
+            minutos = {movie.running_time}
             />        
         )}
         </Container>
