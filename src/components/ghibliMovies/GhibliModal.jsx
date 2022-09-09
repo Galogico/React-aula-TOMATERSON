@@ -40,7 +40,7 @@ height:100%;
 
 `;
 const Esquerda = styled.div`
-widith:100%;
+widith:100 b b b%;
 height:80%;
 `;
 const Direita = styled.div`
